@@ -1,3 +1,4 @@
+````md
 # Todo Task
 
 A Flutter ToDo application built for a developer assessment. It demonstrates **clean architecture**, **BLoC state management**, **GetIt dependency injection**, **offline-first Hive storage**, and **local notifications** for task reminders.
@@ -21,7 +22,7 @@ A Flutter ToDo application built for a developer assessment. It demonstrates **c
 
 The project follows a feature-based clean architecture:
 
-```
+```text
 lib/
 ├── main.dart
 ├── app.dart
@@ -36,41 +37,45 @@ lib/
     ├── domain/                       # Entities + repository contracts
     ├── data/                         # Hive models, datasource, repository impl
     └── presentation/                 # BLoC, pages, widgets
-```
+````
 
 ### Layers
-| Layer | Responsibility |
-|-------|----------------|
-| **Domain** | `Task` entity and `TaskRepository` contract |
-| **Data** | Hive persistence, `TaskRepositoryImpl`, notification scheduling |
-| **Presentation** | `TodoBloc`, UI pages, widgets |
-| **Core** | Shared theme, enums, notification service, DI helpers |
+
+| Layer            | Responsibility                                                  |
+| ---------------- | --------------------------------------------------------------- |
+| **Domain**       | `Task` entity and `TaskRepository` contract                     |
+| **Data**         | Hive persistence, `TaskRepositoryImpl`, notification scheduling |
+| **Presentation** | `TodoBloc`, UI pages, widgets                                   |
+| **Core**         | Shared theme, enums, notification service, DI helpers           |
 
 ### State management
+
 `TodoBloc` handles:
-- Loading and persisting tasks
-- Search and filter state
-- Theme mode persistence
-- Task CRUD and completion toggling
+
+* Loading and persisting tasks
+* Search and filter state
+* Theme mode persistence
+* Task CRUD and completion toggling
 
 ## Tech stack
 
-| Package | Purpose |
-|---------|---------|
-| `flutter_bloc` | State management |
-| `get_it` | Dependency injection |
-| `hive` / `hive_flutter` | Offline local database |
-| `flutter_local_notifications` | Due-date reminders |
-| `timezone` | Scheduled notification times |
-| `equatable` | Value equality for states/events |
-| `uuid` | Task IDs |
-| `intl` | Date formatting |
+| Package                       | Purpose                          |
+| ----------------------------- | -------------------------------- |
+| `flutter_bloc`                | State management                 |
+| `get_it`                      | Dependency injection             |
+| `hive` / `hive_flutter`       | Offline local database           |
+| `flutter_local_notifications` | Due-date reminders               |
+| `timezone`                    | Scheduled notification times     |
+| `equatable`                   | Value equality for states/events |
+| `uuid`                        | Task IDs                         |
+| `intl`                        | Date formatting                  |
 
 ## Setup
 
 ### Prerequisites
-- Flutter SDK `>=3.6.0`
-- Xcode (iOS) or Android Studio (Android)
+
+* Flutter SDK `>=3.6.0`
+* Xcode (iOS) or Android Studio (Android)
 
 ### Install and run
 
@@ -99,26 +104,33 @@ flutter analyze
 
 ## Notifications
 
-- Android 13+ requests the `POST_NOTIFICATIONS` permission at startup.
-- Reminders are scheduled when a task has a due date and **Enable reminder** is on.
-- Reminders are cancelled when a task is completed or deleted.
+* Android 13+ requests the `POST_NOTIFICATIONS` permission at startup.
+* Reminders are scheduled when a task has a due date and **Enable reminder** is on.
+* Reminders are cancelled when a task is completed or deleted.
 
 ## Demo
 
-Add screenshots or a short screen recording showing:
-- Creating a task with all fields
-- Searching and filtering
-- Completing a task
-- Receiving a reminder notification
-- Dark mode
+🎥 **Demo Video:**
+[https://drive.google.com/file/d/1ONRPoFwxyTlWuZ2ZoIp_8sljK9xaj9Mu/view?usp=sharing](https://drive.google.com/file/d/1ONRPoFwxyTlWuZ2ZoIp_8sljK9xaj9Mu/view?usp=sharing)
+
+The demo showcases:
+
+* Creating a task with all fields
+* Searching and filtering tasks
+* Completing and reopening tasks
+* Receiving reminder notifications
+* Dark mode support
 
 ## Project structure decisions
 
-- **Hive over SharedPreferences** for structured offline task storage and better scalability.
-- **Repository pattern** keeps persistence and notification side effects out of the UI layer.
-- **GetIt** centralizes dependency wiring in `injection_container.dart`.
-- **TaskFilterHelper** isolates search/filter logic for easy unit testing.
+* **Hive over SharedPreferences** for structured offline task storage and better scalability.
+* **Repository pattern** keeps persistence and notification side effects out of the UI layer.
+* **GetIt** centralizes dependency wiring in `injection_container.dart`.
+* **TaskFilterHelper** isolates search/filter logic for easy unit testing.
 
 ## License
 
 This project was created as a Flutter developer assessment submission.
+
+```
+```
