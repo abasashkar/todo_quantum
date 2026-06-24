@@ -108,6 +108,41 @@ flutter analyze
 * Reminders are scheduled when a task has a due date and **Enable reminder** is on.
 * Reminders are cancelled when a task is completed or deleted.
 
+
+## Screenshots
+
+<table>
+  <tr>
+    <td align="center">
+      <img src="https://github.com/user-attachments/assets/f12278e2-c4e8-4e38-a09c-b8655788c04c" width="220" alt="Home" /><br/>
+      <sub><b>Home</b></sub>
+    </td>
+    <td align="center">
+      <img src="https://github.com/user-attachments/assets/23536e6e-c370-49c0-9713-ef8238cd61da" width="220" alt="Task list" /><br/>
+      <sub><b>Task List</b></sub>
+    </td>
+    <td align="center">
+      <img src="https://github.com/user-attachments/assets/a9b4391e-c929-4e8d-8e41-9849a98af468" width="220" alt="Add task" /><br/>
+      <sub><b>Add Task</b></sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="https://github.com/user-attachments/assets/98e0b565-770b-448a-a66e-c45d502255a5" width="220" alt="Edit task" /><br/>
+      <sub><b>Edit Task</b></sub>
+    </td>
+    <td align="center">
+      <img src="https://github.com/user-attachments/assets/c88f2668-a160-4f5f-9c40-d6c889f40d73" width="220" alt="Search and filter" /><br/>
+      <sub><b>Search & Filter</b></sub>
+    </td>
+    <td align="center">
+      <img src="https://github.com/user-attachments/assets/adc8078c-4cb6-4bd8-b6d1-6e87699179aa" width="220" alt="Dark mode" /><br/>
+      <sub><b>Dark Mode</b></sub>
+    </td>
+  </tr>
+</table>
+
+
 ## Demo
 
 🎥 **Demo Video:**
