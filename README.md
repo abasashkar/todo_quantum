@@ -1,4 +1,3 @@
-````md
 # Todo Task
 
 A Flutter ToDo application built for a developer assessment. It demonstrates **clean architecture**, **BLoC state management**, **GetIt dependency injection**, **offline-first Hive storage**, and **local notifications** for task reminders.
@@ -37,7 +36,7 @@ lib/
     ├── domain/                       # Entities + repository contracts
     ├── data/                         # Hive models, datasource, repository impl
     └── presentation/                 # BLoC, pages, widgets
-````
+```
 
 ### Layers
 
@@ -166,6 +165,3 @@ The demo showcases:
 ## License
 
 This project was created as a Flutter developer assessment submission.
-
-```
-```
